@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "Teacher Page";
+}
+
+<h1>Welcome to the Teacher Page</h1>
+
+@if (ViewBag.LoginSuccess != null && (bool)ViewBag.LoginSuccess)
+{
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            Swal.fire({
+                icon: 'success',
+                title: 'Login Successful',
+                text: 'Welcome to the Teacher Page!'
+            });
+        });
+    </script>
+}

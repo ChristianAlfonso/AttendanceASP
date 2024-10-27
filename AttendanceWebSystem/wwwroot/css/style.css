@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+hr {
+  width: 100%;
+}
+
+/* Index / Login */
+.layout-container {
+  height: 100vh;
+}
+.layout-container .login-page .login-form, .layout-container .login-page .login-brand {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layout-container .login-page .login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.layout-container .login-page .login-form .form-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.layout-container .login-page .login-form .form-inputs {
+  width: 100%;
+  margin-top: 40px;
+}
+.layout-container .login-page .login-form .form-inputs .input-input {
+  width: 60%;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #E4E4E4;
+}
+.layout-container .login-page .login-form .form-inputs .input-submit {
+  background-color: #2D2AE4;
+  border: #2D2AE4;
+  color: white;
+  width: 60%;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+.layout-container .login-page .login-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: bold;
+}
+
+/* Index / Login *//*# sourceMappingURL=style.css.map */
