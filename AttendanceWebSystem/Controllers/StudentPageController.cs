@@ -15,6 +15,7 @@ namespace AttendanceWebSystem.Controllers
         {
             return View();
         }
+        
 
     }
 }

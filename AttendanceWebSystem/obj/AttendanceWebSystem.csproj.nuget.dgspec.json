@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\AttendanceWebSystem\\AttendanceWebSystem.csproj": {}
+    "D:\\Github Desktop\\AttendanceASP\\AttendanceWebSystem\\AttendanceWebSystem.csproj": {}
   },
   "projects": {
-    "D:\\AttendanceWebSystem\\AttendanceWebSystem.csproj": {
+    "D:\\Github Desktop\\AttendanceASP\\AttendanceWebSystem\\AttendanceWebSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\AttendanceWebSystem\\AttendanceWebSystem.csproj",
+        "projectUniqueName": "D:\\Github Desktop\\AttendanceASP\\AttendanceWebSystem\\AttendanceWebSystem.csproj",
         "projectName": "AttendanceWebSystem",
-        "projectPath": "D:\\AttendanceWebSystem\\AttendanceWebSystem.csproj",
+        "projectPath": "D:\\Github Desktop\\AttendanceASP\\AttendanceWebSystem\\AttendanceWebSystem.csproj",
         "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "D:\\AttendanceWebSystem\\obj\\",
+        "outputPath": "D:\\Github Desktop\\AttendanceASP\\AttendanceWebSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,3 +1,85 @@
+<style>
+    /* Hide the spinner buttons in Chrome, Safari, Edge, and Opera */
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
 
+    /* Hide the spinner buttons in Firefox */
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
 
-<nav class="navbar navbar-expand-sm" style="background-color: #2D2AE4;">a</nav>
+    
+</style>
+
+<nav class="navbar navbar-expand-sm p-4" style="background-color: #2D2AE4; color: white;">
+    <div class="navbar-brand d-flex justify-content-center align-items-center" style="gap: 1rem;">
+        <img src="~/img/qcu-logo.png" alt="Quezon City University" class="img-fluid ms-5" style="width: 100px;">
+        <div class="navbar-brand-title text-center">
+            <h3>Quezon City University</h3>
+            <hr>
+            <h6>Student Attendance System</h6>  
+        </div>
+    </div>
+
+    <div class="container">
+        <ul class="navbar-nav nav nav-tabs ms-auto" role="tablist" style="border: none;">
+            <li class="nav-item">
+                <a href="#home" class="nav-link active" data-bs-toggle="tab" style="color: white; background-color: #2D2AE4;">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#inbox" class="nav-link" data-bs-toggle="tab" style="color: white; background-color: #2D2AE4;">Inbox</a>
+            </li>  
+        </ul>
+    </div>
+</nav>
+
+<div class="tab-content">
+    <div class="tab-pane fade show active" id="home" role="tabpanel">
+        <div class="d-flex justify-content-center align-items-center mt-4">
+            <form action="#" style="width: 600px;">
+                <div class="form-title h2 text-center" style="font-weight: bold">Attendance Form</div>
+                <div class="form-input d-flex flex-column mt-5" style="gap: 2rem;">
+                    <input type="number" name="studentClassCode" class="studentInputs p-3" placeholder="Enter TCC">
+                    <input type="number" name="studentStudentNumber" class="studentInputs p-3" placeholder="Enter Student No.">
+                    <input type="password" name="studentPassword" class="studentInputs p-3" placeholder="Enter Password">                    
+                    <div class="btn-container d-flex justify-content-center align-items-center mb-2">
+                        <input type="submit" class="btn p-2" style="width: 60%; border: 10px; background-color: #C5B350; color: white;">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="tab-pane fade" id="inbox" role="tabpanel">
+        <div class="container d-flex justify-content-center align-items-center mt-3">
+            <table class="table table-striped text-center">
+                <thead>
+                    <th class="h2">TODAY CLASS CODE:</th>
+                </thead>
+                <tbody>
+                    <td id="todayClassCode">.....</td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Fetch the current class code and display it
+        $.ajax({
+            type: 'GET',
+            url: '@Url.Action("GetClassCode", "Home")',
+            success: function(response) {
+                $('#todayClassCode').text(response.classCode);
+            },
+            error: function() {
+                alert('Error fetching class code');
+            }
+        });
+    });
+</script>

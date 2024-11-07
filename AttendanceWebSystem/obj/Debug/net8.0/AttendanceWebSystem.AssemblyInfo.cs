@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AttendanceWebSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92b33b5ae3b21032954eb97ced27130f356da5a5")]
 [assembly: System.Reflection.AssemblyProductAttribute("AttendanceWebSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AttendanceWebSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

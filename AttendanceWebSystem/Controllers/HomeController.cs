@@ -30,5 +30,33 @@ namespace AttendanceWebSystem.Controllers
             ViewBag.ErrorMessage = "Invalid username or password";
             return View();
         }
+    
+    
+    private static string _currentClassCode;
+
+    
+
+    [HttpPost]
+    public IActionResult GenerateClassCode()
+    {
+        var random = new Random();
+        var classCode = random.Next(100000, 999999).ToString(); // Generate a 6-digit random code
+
+        // Save the class code to a shared variable
+        _currentClassCode = classCode;
+
+        return Json(new { classCode });
     }
+
+    [HttpGet]
+    public IActionResult GetClassCode()
+    {
+        return Json(new { classCode = _currentClassCode });
+    }
+    
+    private void SaveClassCodeToDatabase(string classCode)
+    {
+        // Implement your database save logic here
+    }
+    } 
 }

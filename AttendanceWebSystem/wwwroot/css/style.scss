@@ -14,9 +14,11 @@ hr {
 
 /* Index / Login */
 .layout-container {
-    height: 100vh;  
+    height: 100%;  
+    width: 100%;
     
     .login-page {
+
 
         .login-form, .login-brand {
             height: 100vh;
@@ -47,7 +49,7 @@ hr {
                     background-color: #E4E4E4;
                 }
                 .input-submit {
-                    background-color: #2D2AE4;
+                    background-color: #C5B350;
                     border: #2D2AE4;
                     color: white;
                     width: 60%;
